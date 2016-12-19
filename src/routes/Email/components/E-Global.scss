@@ -1,0 +1,14 @@
+/* 颜色
+========================================================================================= */
+$azure1: #2095f2; //蓝色文字
+$white: #ffffff; //白色
+$black: #3c4859; //黑色文字
+$gray1: #9facbd; //灰色文字
+$azure2: #4125e8; //标题底部蓝色线
+$gray2: #eaeef3; //标题底部灰色线
+$gray3: #f7f7f7; //输入框点击输入时背景色
+$gray4: #e9ecfd; //鼠标经过背景色
+$gray5: #dedfe0; //底部立体颜色
+$gray6: #eff3f5; //页面body背景颜色
+
+body{background-color: $gray6;font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;}

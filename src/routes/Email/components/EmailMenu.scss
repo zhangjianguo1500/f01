@@ -1,0 +1,28 @@
+.EmailMenu {
+  width: 180px;
+  height: 500px;
+  float: left;
+     .NameHead{
+       height:50px;
+       padding-top: 6px;
+       background-color:#ced7e1;
+       h2{
+         width: 90%;
+         margin:auto;
+         font-size: 18px;
+         span{font-size: 12px;margin-left: 10px}
+       }
+       .EmailName{width: 90%;margin: auto;line-height: 20px;}
+     }
+     .Operating{
+       width: 126px;
+       margin: 10px auto auto 10px;
+       li{
+         line-height: 30px;
+
+       }
+     }
+
+}
+
+.EmailMenu2 {float:right;}

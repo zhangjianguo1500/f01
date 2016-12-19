@@ -1,0 +1,80 @@
+@import 'base';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+h1 {
+     font-size: 1.5em; 
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1.6rem 0;
+    font-weight: 600;
+    font-size: 100%;
+}
+h2{
+    font-size: 1.25em;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix{
+  clear: both;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 1366px;
+}
+.container{
+	width: 100% !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+button, input:not([type="radio"]):not([type="checkbox"]), select {
+    vertical-align: middle;
+}
+.hh-form select.hh-radius, .hh-form textarea.hh-radius, .hh-form input[type="text"].hh-radius, .hh-form input[type="password"].hh-radius, .hh-form input[type="datetime"].hh-radius, .hh-form input[type="datetime-local"].hh-radius, .hh-form input[type="date"].hh-radius, .hh-form input[type="month"].hh-radius, .hh-form input[type="time"].hh-radius, .hh-form input[type="week"].hh-radius, .hh-form input[type="number"].hh-radius, .hh-form input[type="email"].hh-radius, .hh-form input[type="url"].hh-radius, .hh-form input[type="search"].hh-radius, .hh-form input[type="tel"].hh-radius, .hh-form input[type="color"].hh-radius, .hh-form-field.hh-radius {
+    border-radius: 6px;
+}
+.hh-form select, .hh-form textarea, .hh-form input[type="text"], .hh-form input[type="password"], .hh-form input[type="datetime"], .hh-form input[type="datetime-local"], .hh-form input[type="date"], .hh-form input[type="month"], .hh-form input[type="time"], .hh-form input[type="week"], .hh-form input[type="number"], .hh-form input[type="email"], .hh-form input[type="url"], .hh-form input[type="search"], .hh-form input[type="tel"], .hh-form input[type="color"], .hh-form-field {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    background-image: none;
+    border: 1px solid #f7f7f7;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+a{
+  color: #333;
+}
+label{
+  font-weight: normal;
+}
+.box_space {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

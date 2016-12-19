@@ -1,0 +1,1 @@
+export {setLanguage , setTranslations } from './loc'                                                  

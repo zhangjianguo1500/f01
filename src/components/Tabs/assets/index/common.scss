@@ -1,0 +1,137 @@
+.#{$tabs-prefix-cls} {
+  box-sizing: border-box;
+  position: relative;
+}
+.#{$tabs-prefix-cls}-bar,
+.#{$tabs-prefix-cls}-nav-container {
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  outline: none;
+  zoom: 1;
+}
+.#{$tabs-prefix-cls}-ink-bar {
+  z-index: 1;
+  position: absolute;
+  box-sizing: border-box;
+  margin-top: -3px;
+  background-color: #4125e8;
+  transform-origin: 0 0;
+}
+.#{$tabs-prefix-cls}-ink-bar-animated {
+  transition: transform .3s cubic-bezier(0.35,0,0.25,1);
+}
+.#{$tabs-prefix-cls}-tab-prev,
+.#{$tabs-prefix-cls}-tab-next {
+  user-select: none;
+  z-index: 1;
+  line-height: 36px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+}
+.#{$tabs-prefix-cls}-tab-prev-icon,
+.#{$tabs-prefix-cls}-tab-next-icon {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: inherit;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  font-smoothing: antialiased;
+  text-stroke-width: 0;
+  font-family: sans-serif;
+}
+.#{$tabs-prefix-cls}-tab-prev-icon:before,
+.#{$tabs-prefix-cls}-tab-next-icon:before {
+  display: block;
+}
+.#{$tabs-prefix-cls}-tab-btn-disabled {
+  cursor: default;
+  color: #ccc;
+}
+.#{$tabs-prefix-cls}-nav-wrap {
+  overflow: hidden;
+}
+.#{$tabs-prefix-cls}-nav {
+  box-sizing: border-box;
+  padding-left: 0;
+  position: relative;
+  margin: 0;
+  float: left;
+  list-style: none;
+  display: inline-block;
+  transform-origin: 0 0;
+}
+.#{$tabs-prefix-cls}-nav-animated {
+  transition: transform $effect-duration $easing-in-out;
+}
+.#{$tabs-prefix-cls}-nav:before,
+.#{$tabs-prefix-cls}-nav:after {
+  display: table;
+  content: " ";
+}
+.#{$tabs-prefix-cls}-nav:after {
+  clear: both;
+}
+.#{$tabs-prefix-cls}-tab {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transition: color  $effect-duration $easing-in-out;
+  padding: 8px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #b5c0cd;
+}
+.#{$tabs-prefix-cls}-tab:hover {
+  color: #23c0fa;
+}
+.#{$tabs-prefix-cls}-tab-active,
+.#{$tabs-prefix-cls}-tab-active:hover {
+  color: #4125e8;
+  cursor: default;
+  transform: translateZ(0);
+}
+.#{$tabs-prefix-cls}-tab-disabled {
+  cursor: default;
+  color: #ccc;
+}
+.#{$tabs-prefix-cls}-tab-disabled:hover {
+  color: #ccc;
+}
+.#{$tabs-prefix-cls}-content .#{$tabs-prefix-cls}-tabpane {
+  overflow: auto;
+}
+.#{$tabs-prefix-cls} {
+  &-content-animated{
+    transition: transform  $effect-duration $easing-in-out, 
+    margin-left  $effect-duration $easing-in-out,
+     margin-top  $effect-duration $easing-in-out;
+    display: flex;
+    will-change: transform;
+  }
+  &-content {
+    zoom: 1;
+    width: 100%;
+  }
+}
+.#{$tabs-prefix-cls}-content-animated .#{$tabs-prefix-cls}-tabpane {
+  flex-shrink: 0;
+}
+.no-flexbox .#{$tabs-prefix-cls}-content {
+  transform: none !important;
+  overflow: auto;
+}
+.no-csstransitions .#{$tabs-prefix-cls}-tabpane-inactive,
+.no-flexbox .#{$tabs-prefix-cls}-tabpane-inactive,
+.#{$tabs-prefix-cls}-content-no-animated .#{$tabs-prefix-cls}-tabpane-inactive {
+  display: none;
+}

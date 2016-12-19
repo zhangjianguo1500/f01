@@ -1,0 +1,121 @@
+li{
+  list-style: none;
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearBoth{
+  clear: both;
+}
+.route--active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.head-bg{
+  height: 82px;
+  position: fixed;
+  min-width: 1366px;
+  width: 100%;
+  background: -webkit-linear-gradient(30deg, #6751ED, #ADEADF); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(30deg, #6751ED, #ADEADF); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(30deg, #6751ED, #ADEADF); /* Firefox 3.6 - 15 */
+  background: linear-gradient(30deg, #6751ED, #ADEADF); /* 标准的语法（必须放在最后） */
+  .logo{
+    padding-right: 60px;
+    padding-left: 50px;
+    float: left;
+    img{
+      margin-top: 10px;
+    }
+  }
+
+  .nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    ul{
+      padding-left: 0;
+      margin-left: 10px;
+      li:first-child{
+        a{
+          opacity:1
+        }
+        a:hover{
+          span{
+            display: none;
+          }
+        }
+      }
+      li{
+         float: left;
+         margin-right: 8px;
+         position: relative;
+         a{
+             padding: 8px 20px;
+             font-family: "微软雅黑";
+             opacity:0.6;
+             color: #4125c8;
+             display: inline-block;
+             background-color: #fff;
+             font-size: 14px;
+             border-radius: 8px 8px 0 0;
+             -webkit-border-radius:8px 8px 0 0;
+             span{
+                color: #f70707;
+                position: absolute;
+                right: 2px;
+                top:2px;
+                font-size: 10px;
+                display: none;
+             }
+
+         }
+         a:hover{
+            text-decoration: none;
+            opacity:1;
+            span{
+              display: block;
+            }
+         }
+
+      }
+    }
+
+  }
+}
+.user-link{
+    margin-top: 2px;
+    float: right;
+    ul{
+      li{
+        float: left;
+        width: 46px;
+        font-size: 30px;
+        a{
+          color: #fff;
+        }
+        a:hover{
+          text-decoration: none;
+        }
+        sub{
+          width: 18px;
+          height: 18px;
+          line-height: 16px;
+          font-size: 8px;
+          text-align: center;
+          color: #ffffff;
+          top: 0px;
+          display: block;
+          background-color: #f21211;
+          border-radius: 10px;
+          margin-left: 18px;
+          margin-top: 3px;
+          position: absolute;
+        }
+      }
+    }
+}

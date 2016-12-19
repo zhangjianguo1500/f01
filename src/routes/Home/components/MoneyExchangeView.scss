@@ -1,0 +1,96 @@
+.mt10 {
+    margin-top: 10px;
+}
+.currency-hd {
+    border-bottom: #eaeef3 solid 1px;
+    height: 42px;
+    margin: 0 10px;
+    h2{
+    	padding: 0 10px;
+	    color: #634eeb;
+	    height: 42px;
+	    line-height: 42px;
+	    margin: 0;
+	    padding: 0 6px;
+	    font-weight: 100;
+	    border-bottom: #634eeb solid 1px;
+	    display: block;
+	    position: absolute;
+    }
+}
+.currency-bd .currency-box {
+    padding: 10px 0 0 0;
+    display: block;
+}
+.currency-bd {
+    padding: 0 10px 10px 10px;
+    display: block;
+    h2{
+    	padding: 4px 10px;
+	    display: block;
+	    margin-bottom: 0px;
+	    font-weight: 100;
+	    font-size: 14px;
+	    line-height: 30px;
+    }
+    .dictionary-title {
+    	color: #cdcecf;
+	}
+	.t10 {
+    	padding-top: 10px;
+	}
+}
+.select-from-currency, .select-to-currency {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    width: 96px;
+    text-align: center;
+}
+.currency-btn, .currency-btn-disable {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+}
+.currency-bd .currency-box .ic-i-switch {
+    font-size: 20px;
+}
+.ar-btn.hh-radius {
+    border-radius: 6px;
+}
+.ar-btn {
+    width: 58px;
+    display: inline-block;
+    margin-top: -7px;
+    margin-bottom: 0;
+    padding: 5.5px 1em;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+    transition: background-color 300ms ease-out, border-color 300ms ease-out;
+}
+.rc-select-selection__placeholder {
+    position: absolute;
+    top: 0;
+    color: #333;
+}
+.rc-select{
+    width: 96px !important;
+    border: 0 !important;
+}
