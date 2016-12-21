@@ -1,15 +1,17 @@
+@import "variables";
+
 @font-face {
   font-family: 'font-1';
-  src:  url('fonts/font-1.eot?gkv8gj');
-  src:  url('fonts/font-1.eot?gkv8gj#iefix') format('embedded-opentype'),
-  url('fonts/font-1.ttf?gkv8gj') format('truetype'),
-  url('fonts/font-1.woff?gkv8gj') format('woff'),
-  url('fonts/font-1.svg?gkv8gj#font-1') format('svg');
+  src:  url('#{$icomoon-font-path}/font-1.eot?1df333');
+  src:  url('#{$icomoon-font-path}/font-1.eot?1df333#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/font-1.ttf?1df333') format('truetype'),
+    url('#{$icomoon-font-path}/font-1.woff?1df333') format('woff'),
+    url('#{$icomoon-font-path}/font-1.svg?1df333#font-1') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-i {
+i, .icomoon-liga {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'font-1' !important;
   speak: none;
@@ -18,96 +20,303 @@ i {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ic-change-password:before {
-  content: "\e910";
+.ic-offer {
+  &:before {
+    content: $ic-offer;
+  }
 }
-.ic-information:before {
-  content: "\e911";
+.ic-dibut .path1 {
+  &:before {
+    content: $ic-dibut-path1;  
+    color: rgb(0, 0, 0);
+  }
 }
-.ic-Sign-out:before {
-  content: "\e912";
+.ic-dibut .path2 {
+  &:before {
+    content: $ic-dibut-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
 }
-.ic-arrow_more_16:before {
-  content: "\e913";
+.ic-dibut .path3 {
+  &:before {
+    content: $ic-dibut-path3;  
+    margin-left: -1em;  
+    color: rgb(140, 148, 155);
+  }
 }
-.ic-activity:before {
-  content: "\e914";
+.ic-merge {
+  &:before {
+    content: $ic-merge;
+  }
 }
-.ic-information2:before {
-  content: "\e915";
+.ic-drval {
+  &:before {
+    content: $ic-drval;
+  }
 }
-.ic-mail:before {
-  content: "\e916";
+.ic-delete {
+  &:before {
+    content: $ic-delete;
+  }
 }
-.ic-notice:before {
-  content: "\e917";
+.ic-tsort {
+  &:before {
+    content: $ic-tsort;
+  }
 }
-.ic-task:before {
-  content: "\e918";
+.ic-ewrite {
+  &:before {
+    content: $ic-ewrite;
+  }
 }
-.ic-clear .path1:before {
-  content: "\e919";
-  color: rgb(216, 216, 216);
+.ic-e-mail {
+  &:before {
+    content: $ic-e-mail;
+  }
 }
-.ic-clear .path2:before {
-  content: "\e91a";
-  margin-left: -1em;
-  color: rgb(159, 172, 189);
+.ic-einbox {
+  &:before {
+    content: $ic-einbox;
+  }
 }
-.ic-search:before {
-  content: "\e91b";
+.ic-hbeen {
+  &:before {
+    content: $ic-hbeen;
+  }
 }
-.ic-i-menu-delete:before {
-  content: "\e90f";
+.ic-ydelete {
+  &:before {
+    content: $ic-ydelete;
+  }
 }
-.ic-i-add:before {
-  content: "\e900";
+.ic-smine {
+  &:before {
+    content: $ic-smine;
+  }
 }
-.ic-i-arrow-left:before {
-  content: "\e901";
+.ic-dtbin {
+  &:before {
+    content: $ic-dtbin;
+  }
 }
-.ic-i-arrow-more:before {
-  content: "\e902";
+.ic-draft {
+  &:before {
+    content: $ic-draft;
+  }
 }
-.ic-i-arrow--right:before {
-  content: "\e903";
+.ic-mction {
+  &:before {
+    content: $ic-mction;
+  }
 }
-.ic-i-email:before {
-  content: "\e904";
+.ic-eamine {
+  &:before {
+    content: $ic-eamine;
+  }
 }
-.ic-i-Enclosure:before {
-  content: "\e905";
+.ic-eshare {
+  &:before {
+    content: $ic-eshare;
+  }
 }
-.ic-i-help:before {
-  content: "\e906";
+.ic-checkbox-uncheck .path1 {
+  &:before {
+    content: $ic-checkbox-uncheck-path1;  
+    color: rgb(191, 191, 191);
+  }
 }
-.ic-i-home:before {
-  content: "\e907";
+.ic-checkbox-uncheck .path2 {
+  &:before {
+    content: $ic-checkbox-uncheck-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
 }
-.ic-i-inputbox-arrow_16:before {
-  content: "\e908";
+.ic-checkbox-uncheck .path3 {
+  &:before {
+    content: $ic-checkbox-uncheck-path3;  
+    margin-left: -1em;  
+    color: rgb(243, 247, 252);
+  }
 }
-.ic-i-menu:before {
-  content: "\e909";
+.ic-checkbox-checked .path1 {
+  &:before {
+    content: $ic-checkbox-checked-path1;  
+    color: rgb(202, 202, 202);
+  }
 }
-.ic-i-message:before {
-  content: "\e90a";
+.ic-checkbox-checked .path2 {
+  &:before {
+    content: $ic-checkbox-checked-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
 }
-.ic-i-search:before {
-  content: "\e90b";
+.ic-checkbox-checked .path3 {
+  &:before {
+    content: $ic-checkbox-checked-path3;  
+    margin-left: -1em;  
+    color: rgb(69, 42, 233);
+  }
 }
-.ic-i-switch:before {
-  content: "\e90c";
+.ic-change-password {
+  &:before {
+    content: $ic-change-password;
+  }
 }
-.ic-i-user:before {
-  content: "\e90d";
+.ic-information {
+  &:before {
+    content: $ic-information;
+  }
 }
-.ic-i-write-mails:before {
-  content: "\e90e";
+.ic-Sign-out {
+  &:before {
+    content: $ic-Sign-out;
+  }
 }
+.ic-arrow_more_16 {
+  &:before {
+    content: $ic-arrow_more_16;
+  }
+}
+.ic-activity {
+  &:before {
+    content: $ic-activity;
+  }
+}
+.ic-information2 {
+  &:before {
+    content: $ic-information2;
+  }
+}
+.ic-mail {
+  &:before {
+    content: $ic-mail;
+  }
+}
+.ic-notice {
+  &:before {
+    content: $ic-notice;
+  }
+}
+.ic-task {
+  &:before {
+    content: $ic-task;
+  }
+}
+.ic-clear .path1 {
+  &:before {
+    content: $ic-clear-path1;  
+    color: rgb(216, 216, 216);
+  }
+}
+.ic-clear .path2 {
+  &:before {
+    content: $ic-clear-path2;  
+    margin-left: -1em;  
+    color: rgb(159, 172, 189);
+  }
+}
+.ic-search {
+  &:before {
+    content: $ic-search;
+  }
+}
+.ic-i-menu-delete {
+  &:before {
+    content: $ic-i-menu-delete;
+  }
+}
+.ic-i-add {
+  &:before {
+    content: $ic-i-add;
+  }
+}
+.ic-i-arrow-left {
+  &:before {
+    content: $ic-i-arrow-left;
+  }
+}
+.ic-i-arrow-more {
+  &:before {
+    content: $ic-i-arrow-more;
+  }
+}
+.ic-i-arrow--right {
+  &:before {
+    content: $ic-i-arrow--right;
+  }
+}
+.ic-i-email {
+  &:before {
+    content: $ic-i-email;
+  }
+}
+.ic-i-Enclosure {
+  &:before {
+    content: $ic-i-Enclosure;
+  }
+}
+.ic-i-help {
+  &:before {
+    content: $ic-i-help;
+  }
+}
+.ic-i-home {
+  &:before {
+    content: $ic-i-home;
+  }
+}
+.ic-i-inputbox-arrow_16 {
+  &:before {
+    content: $ic-i-inputbox-arrow_16;
+  }
+}
+.ic-i-menu {
+  &:before {
+    content: $ic-i-menu;
+  }
+}
+.ic-i-message {
+  &:before {
+    content: $ic-i-message;
+  }
+}
+.ic-i-search {
+  &:before {
+    content: $ic-i-search;
+  }
+}
+.ic-i-switch {
+  &:before {
+    content: $ic-i-switch;
+  }
+}
+.ic-i-user {
+  &:before {
+    content: $ic-i-user;
+  }
+}
+.ic-i-write-mails {
+  &:before {
+    content: $ic-i-write-mails;
+  }
+}
+
